@@ -1,5 +1,17 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui,
+    "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+
 body {
-  font-family: system-ui, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  /* 크림 → 연한 살구 그라데이션 + 은은한 빛 번짐 (글래스 카드가 비쳐 보일 배경) */
+  background-color: #fff8ef;
+  background-image:
+    radial-gradient(60rem 40rem at 10% -10%, rgba(255, 214, 170, 0.55), transparent 60%),
+    radial-gradient(50rem 36rem at 110% 110%, rgba(255, 190, 160, 0.45), transparent 60%),
+    linear-gradient(180deg, #fff8ef 0%, #fde6d4 100%);
+  background-attachment: fixed;
+  word-break: keep-all;
 }
